@@ -1,0 +1,30 @@
+[tool.pdm]
+[[tool.pdm.source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[tool.pdm.dev-dependencies]
+dev = []
+
+[project]
+name = "scrapy-mattermostbot"
+version = "1.0.0"
+description = "A Scrapy extension for sending notification to Mattermost channels"
+authors = [
+    {name = "Jeel Rupapara", email = "zeelrupapara@gmail.com"},
+]
+readme = "README.md"
+keywords = ["scrapy", "mattermost", "mattermostbot"]
+license = {text = "MIT"}
+# PEP 621 project metadata
+# See https://www.python.org/dev/peps/pep-0621/
+requires-python = ">=3.6"
+dependencies = [
+    "scrapy",
+    "pdm",
+]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
