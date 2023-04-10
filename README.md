@@ -15,7 +15,7 @@ In `settings.py`:
 
 ```python
 EXTENSIONS = {
-    'scrapyslackbot.extensions.Mattermost': 500,
+    'scrapymattermostbot.extensions.Mattermost': 500,
 }
 
 MATTERMOST_WEBHOOK_URL = <mattermost webhook url>
